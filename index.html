@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- SEO PRIMARY -->
+<title>KHANHNAM.MOVIE — Xem Phim Việt, Anime & YouTube Miễn Phí</title>
+<meta name="description" content="KHANHNAM.MOVIE — Xem phim Việt, anime, YouTube hoàn toàn miễn phí. Phim bộ, phim lẻ, lồng tiếng, thuyết minh, top anime mới nhất 2026."/>
+<meta name="keywords" content="xem phim online miễn phí, phim việt, anime vietsub, phim lồng tiếng, phim thuyết minh, khanhnam movie, khanhnam.movie"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="KHANHNAM.MOVIE"/>
+<link rel="canonical" href="https://khanhnam.movie/"/>
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://khanhnam.movie/"/>
+<meta property="og:title" content="KHANHNAM.MOVIE — Xem Phim Miễn Phí"/>
+<meta property="og:description" content="Nền tảng xem phim hoàn toàn miễn phí. Phim bộ, phim lẻ, lồng tiếng — tất cả tại KHANHNAM.MOVIE"/>
+<meta property="og:image" content="https://files.catbox.moe/v56bhy.jpeg"/>
+<meta property="og:locale" content="vi_VN"/>
+<meta property="og:site_name" content="KHANHNAM.MOVIE"/>
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="KHANHNAM.MOVIE — Xem Phim Miễn Phí"/>
+<meta name="twitter:description" content="Phim — Hoàn toàn miễn phí tại KHANHNAM.MOVIE"/>
+<meta name="twitter:image" content="https://files.catbox.moe/v56bhy.jpeg"/>
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"KHANHNAM.MOVIE","url":"https://khanhnam.movie","description":"Nền tảng xem phim Việt, Anime, YouTube miễn phí","inLanguage":"vi","potentialAction":{"@type":"SearchAction","target":"https://khanhnam.movie/?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#04060f;--s1:#070b17;--s2:#0b1020;--s3:#101628;
+  --bd:rgba(79,124,255,.1);--bd2:rgba(139,92,246,.15);
+  --primary:#4f7cff;--primary2:#7c3aed;--accent:#a78bfa;--cyan:#22d3ee;
+  --glow1:rgba(79,124,255,.35);--glow2:rgba(139,92,246,.35);
+  --red:#4f7cff;--green:#10b981;--purple:#a78bfa;--yt:#ff4545;--blue:#4f7cff;
+  --gold:#fbbf24;--tx:#e8eeff;--mu:#5a6a8a;
+  --cw:155px;--ch:232px;--r:10px;--nh:62px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:"Rajdhani",sans-serif;min-height:100vh;overflow-x:hidden}
+
+/* AMBIENT BACKGROUND */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(79,124,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(79,124,255,.035) 1px,transparent 1px);
+  background-size:48px 48px;
+  animation:gridMove 24s linear infinite;
+}
+@keyframes gridMove{0%{background-position:0 0}100%{background-position:48px 48px}}
+body::after{
+  content:"";position:fixed;top:-30vh;left:-20vw;width:80vw;height:80vw;
+  background:radial-gradient(circle,rgba(79,124,255,.06) 0%,transparent 65%);
+  border-radius:50%;pointer-events:none;z-index:0;
+  animation:orbFloat 14s ease-in-out infinite;
+}
+@keyframes orbFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(8vw,6vh)}}
+#app,#toast{position:relative;z-index:1}
+
+button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+img{display:block}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:var(--s1)}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--primary),var(--primary2));border-radius:3px}
+
+/* NAV */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nh);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(10px,3vw,48px);
+  background:rgba(4,6,15,.93);backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--bd);transition:background .3s;
+}
+#nav::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--primary),var(--primary2),transparent);opacity:.5}
+.logo{
+  font-family:"Orbitron",sans-serif;font-size:17px;font-weight:900;letter-spacing:2px;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  cursor:pointer;user-select:none;flex-shrink:0;
+  filter:drop-shadow(0 0 10px rgba(79,124,255,.45));transition:filter .3s;
+}
+.logo:hover{filter:drop-shadow(0 0 22px rgba(167,139,250,.8))}
+.logo b{background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+.nav-links{display:flex;gap:2px;list-style:none;flex-wrap:nowrap}
+.nav-links a{
+  font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+  color:var(--mu);padding:5px 9px;border-radius:6px;cursor:pointer;transition:all .2s;white-space:nowrap;text-decoration:none;
+}
+.nav-links a:hover{color:var(--tx);background:rgba(79,124,255,.1);text-shadow:0 0 8px rgba(79,124,255,.5)}
+.nav-links a.on{color:var(--accent);background:rgba(79,124,255,.14)}
+.nav-right{display:flex;align-items:center;gap:8px}
+
+/* SEARCH BAR */
+.search-wrap{position:relative}
+.search-box{
+  display:flex;align-items:center;gap:6px;
+  background:var(--s2);border:1.5px solid var(--bd);
+  border-radius:10px;padding:6px 12px;
+  transition:border-color .25s,width .3s,box-shadow .25s;width:190px;
+}
+.search-box:focus-within{border-color:var(--primary);width:260px;box-shadow:0 0 0 3px rgba(79,124,255,.12),0 0 20px rgba(79,124,255,.08)}
+.search-box input{background:none;border:none;outline:none;color:var(--tx);font-size:13px;font-family:"Rajdhani",sans-serif;font-weight:500;width:100%}
+.search-box input::placeholder{color:var(--mu)}
+#drop{
+  display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;
+  background:rgba(7,11,23,.97);border:1px solid var(--bd);border-radius:12px;
+  z-index:9999;box-shadow:0 24px 60px rgba(0,0,0,.9),0 0 0 1px rgba(79,124,255,.08);
+  max-height:460px;overflow-y:auto;backdrop-filter:blur(20px);
+}
+#drop.show{display:block;animation:dropIn .2s ease}
+@keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.drop-sep{padding:5px 12px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--primary);background:rgba(79,124,255,.05);border-top:1px solid var(--bd)}
+.drop-item{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;transition:background .15s}
+.drop-item:hover{background:rgba(79,124,255,.07)}
+.drop-item img{width:32px;height:48px;object-fit:cover;border-radius:5px;flex-shrink:0;background:var(--s3)}
+.drop-item.yt-row img{width:54px;height:34px}
+.di-title{font-size:12.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.di-sub{font-size:10.5px;color:var(--mu);margin-top:2px;display:flex;align-items:center;gap:5px}
+.tag{font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px}
+.tag.vn{background:rgba(16,185,129,.2);color:var(--green)}
+.tag.ani{background:rgba(167,139,250,.2);color:var(--purple)}
+.tag.yt{background:rgba(255,69,69,.2);color:var(--yt)}
+.tag.lt{background:rgba(251,191,36,.2);color:var(--gold)}
+.drop-more{padding:9px 12px;font-size:12px;font-weight:700;color:var(--accent);text-align:center;cursor:pointer;border-top:1px solid var(--bd);letter-spacing:.5px}
+.drop-more:hover{background:rgba(79,124,255,.07)}
+
+/* HERO */
+.hero{position:relative;height:85vh;min-height:480px;max-height:780px;overflow:hidden}
+.hslide{position:absolute;inset:0;opacity:0;transition:opacity 1s}
+.hslide.on{opacity:1}
+.hbg{position:absolute;inset:0;background-size:cover;background-position:center 20%;transform:scale(1.06);transition:transform 8s}
+.hslide.on .hbg{transform:scale(1)}
+.hgrad{position:absolute;inset:0;background:linear-gradient(to right,rgba(4,6,15,.97) 0%,rgba(4,6,15,.6) 50%,transparent 100%),linear-gradient(to top,rgba(4,6,15,1) 0%,transparent 55%),linear-gradient(135deg,rgba(79,124,255,.06) 0%,rgba(139,92,246,.06) 100%)}
+.hcont{position:absolute;bottom:20%;left:clamp(14px,4vw,60px);max-width:540px;z-index:2}
+.h-src{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 11px;border-radius:4px;margin-bottom:14px;color:#fff;border:1px solid rgba(79,124,255,.4);background:rgba(79,124,255,.14)}
+.h-title{
+  font-family:"Orbitron",sans-serif;font-size:clamp(24px,4.5vw,58px);
+  line-height:1.08;letter-spacing:2px;margin-bottom:12px;
+  text-shadow:0 0 40px rgba(79,124,255,.28),0 4px 24px rgba(0,0,0,.7);
+}
+.h-meta{display:flex;align-items:center;gap:11px;flex-wrap:wrap;font-size:12px;color:var(--mu);margin-bottom:12px}
+.h-chip{font-size:10.5px;background:rgba(79,124,255,.1);border:1px solid rgba(79,124,255,.2);border-radius:4px;padding:2px 8px;font-weight:600;color:var(--accent)}
+.h-desc{font-size:14px;line-height:1.7;color:rgba(232,238,255,.72);margin-bottom:24px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-weight:400}
+.h-btns{display:flex;gap:10px;flex-wrap:wrap}
+.hdots{position:absolute;bottom:8%;left:clamp(14px,4vw,60px);display:flex;gap:6px;z-index:2}
+.hdot{height:3px;border-radius:2px;background:rgba(255,255,255,.18);width:20px;transition:all .3s;cursor:pointer;border:none}
+.hdot.on{background:linear-gradient(90deg,var(--primary),var(--accent));width:38px;box-shadow:0 0 8px rgba(79,124,255,.5)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:7px;padding:10px 22px;border-radius:9px;font-size:13px;font-weight:700;font-family:"Rajdhani",sans-serif;letter-spacing:.5px;text-transform:uppercase;transition:all .2s;cursor:pointer;border:none}
+.btn-red{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 4px 20px rgba(79,124,255,.38),0 0 0 1px rgba(79,124,255,.25)}
+.btn-red:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,124,255,.55),0 0 20px rgba(139,92,246,.25)}
+.btn-ghost{background:rgba(255,255,255,.05);color:var(--tx);border:1px solid rgba(255,255,255,.1)}.btn-ghost:hover{background:rgba(79,124,255,.08);border-color:rgba(79,124,255,.3)}
+.btn-yt{background:rgba(255,69,69,.14);color:#fff;border:1px solid rgba(255,69,69,.28)}.btn-yt:hover{background:rgba(255,69,69,.26)}
+.btn-lt{background:rgba(251,191,36,.12);color:var(--gold);border:1px solid rgba(251,191,36,.28)}.btn-lt:hover{background:rgba(251,191,36,.22)}
+.fav-btn{width:42px;height:42px;border-radius:50%;background:var(--s2);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .22s}
+.fav-btn:hover{background:rgba(79,124,255,.18);border-color:var(--primary);box-shadow:0 0 14px rgba(79,124,255,.28)}
+.fav-btn.on{background:linear-gradient(135deg,var(--primary),var(--primary2));border-color:var(--primary);box-shadow:0 0 18px rgba(79,124,255,.38)}
+
+/* SECTION */
+.sec{padding:26px clamp(10px,3vw,48px)}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.sec-title{font-family:"Orbitron",sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:10px;color:var(--tx)}
+.sec-title::before{content:"";display:block;width:3px;height:20px;border-radius:2px;background:linear-gradient(var(--primary),var(--primary2));box-shadow:0 0 8px var(--primary)}
+.see-all{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent);cursor:pointer;text-decoration:none;transition:all .2s;padding:4px 10px;border-radius:5px;border:1px solid rgba(167,139,250,.2)}
+.see-all:hover{background:rgba(167,139,250,.08);border-color:var(--accent)}
+
+/* ROW */
+.row{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.row::-webkit-scrollbar{display:none}
+
+/* CARD — PORTRAIT */
+.card{flex-shrink:0;width:var(--cw);cursor:pointer;scroll-snap-align:start;transition:transform .25s}
+.card:hover{transform:translateY(-6px)}
+.card:hover .c-ov{opacity:1}
+.card:hover .c-poster img{transform:scale(1.08)}
+.card:hover .c-poster{box-shadow:0 14px 36px rgba(79,124,255,.22),0 0 0 1px rgba(79,124,255,.18)}
+.c-poster{position:relative;width:100%;height:var(--ch);border-radius:var(--r);overflow:hidden;background:var(--s2);transition:box-shadow .25s}
+.c-poster img{width:100%;height:100%;object-fit:cover;transition:transform .38s}
+.c-ov{position:absolute;inset:0;opacity:0;transition:opacity .22s;background:linear-gradient(to top,rgba(4,6,15,.92),transparent 58%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px}
+.c-play{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary2));display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;box-shadow:0 4px 18px rgba(79,124,255,.55);transition:transform .2s}
+.c-play:hover{transform:scale(1.14)}
+.c-badge{position:absolute;top:6px;left:6px;font-size:9px;font-weight:700;color:#fff;padding:2px 6px;border-radius:4px}
+.cb-vn{background:var(--green)}.cb-bo{background:#2563eb}.cb-le{background:var(--primary2)}.cb-hh{background:#059669}.cb-lt{background:var(--gold);color:#000}.cb-ani{background:var(--purple);color:#000}.cb-yt{background:var(--yt)}
+.c-ep{position:absolute;bottom:5px;right:5px;font-size:9px;font-weight:600;color:#fff;background:rgba(0,0,0,.82);padding:2px 5px;border-radius:4px}
+.c-rat{position:absolute;top:6px;right:6px;font-size:10px;font-weight:700;color:var(--gold);background:rgba(0,0,0,.78);padding:2px 6px;border-radius:4px}
+.c-info{margin-top:7px}
+.c-title{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px}
+.c-sub{font-size:10px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* CARD — LANDSCAPE (YouTube) */
+.yt-card{flex-shrink:0;width:210px;cursor:pointer;scroll-snap-align:start;transition:transform .2s}
+.yt-card:hover{transform:translateY(-4px)}
+.yt-thumb{position:relative;width:100%;height:118px;border-radius:var(--r);overflow:hidden;background:var(--s2)}
+.yt-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.yt-card:hover .yt-thumb img{transform:scale(1.05)}
+.yt-card:hover .yt-thumb{box-shadow:0 10px 28px rgba(79,124,255,.18)}
+.yt-dur{position:absolute;bottom:5px;right:5px;background:rgba(0,0,0,.85);border-radius:4px;padding:1px 5px;font-size:9.5px;font-weight:600;color:#fff}
+.yt-info{margin-top:7px}
+.yt-title{font-size:12px;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.4;margin-bottom:3px}
+.yt-ch{font-size:10px;color:var(--mu)}
+
+/* SKELETON */
+.sk{background:linear-gradient(90deg,var(--s2) 25%,var(--s3) 50%,var(--s2) 75%);background-size:200% 100%;animation:shim 1.4s infinite;border-radius:var(--r)}
+@keyframes shim{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.sk-p{flex-shrink:0;width:var(--cw);height:var(--ch);border-radius:var(--r)}
+.sk-yt{flex-shrink:0;width:210px;height:118px;border-radius:var(--r)}
+
+/* DIVIDER */
+.div-row{display:flex;align-items:center;gap:12px;padding:0 clamp(10px,3vw,48px);margin:4px 0}
+.div-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(79,124,255,.2),transparent)}
+.div-label{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 12px;border-radius:20px;white-space:nowrap;font-family:"Rajdhani",sans-serif}
+
+/* DETAIL */
+.det{padding-top:var(--nh)}
+.det-hero{position:relative;height:460px;overflow:hidden}
+.det-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(4px) brightness(.2) saturate(1.5);transform:scale(1.05)}
+.det-fog{position:absolute;inset:0;background:linear-gradient(to top,var(--bg) 10%,rgba(4,6,15,.2) 100%)}
+.det-body{position:relative;z-index:2;display:flex;gap:28px;padding:0 clamp(10px,4vw,56px);padding-top:48px}
+.det-poster{width:180px;height:270px;flex-shrink:0;border-radius:12px;overflow:hidden;box-shadow:0 16px 52px rgba(0,0,0,.7),0 0 0 1px rgba(79,124,255,.2)}
+.det-poster img{width:100%;height:100%;object-fit:cover}
+.det-info{flex:1;padding-top:6px}
+.det-title{font-family:"Orbitron",sans-serif;font-size:clamp(22px,4.5vw,50px);line-height:1.1;margin-bottom:7px;letter-spacing:1px}
+.det-ori{font-size:13px;color:var(--mu);margin-bottom:10px}
+.det-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.det-chip{background:var(--s2);border:1px solid var(--bd);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:600;color:var(--mu)}
+.det-genres{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:13px}
+.gtag{border-radius:20px;padding:2px 11px;font-size:11px;font-weight:600;border:1px solid;cursor:pointer}
+.gtag.vn{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.25);color:var(--green)}
+.gtag.ani{background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.25);color:var(--purple)}
+.det-desc{font-size:13px;line-height:1.72;color:rgba(232,238,255,.75);margin-bottom:18px;max-width:580px}
+.det-acts{display:flex;gap:8px;flex-wrap:wrap}
+
+/* EPISODE */
+.ep-box{padding:0 clamp(10px,4vw,56px) 22px}
+.ep-box-title{font-family:"Orbitron",sans-serif;font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:8px;letter-spacing:1px}
+.ep-box-title::before{content:"";display:block;width:3px;height:18px;background:linear-gradient(var(--primary),var(--primary2));border-radius:2px;box-shadow:0 0 8px var(--primary)}
+.sv-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.sv-tab{padding:6px 14px;border-radius:7px;font-size:12px;font-weight:600;color:var(--mu);background:var(--s2);border:1px solid var(--bd);transition:all .18s;cursor:pointer}
+.sv-tab:hover{color:var(--tx)}.sv-tab.on{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border-color:var(--primary);box-shadow:0 0 12px rgba(79,124,255,.3)}
+.ep-list{display:flex;flex-wrap:wrap;gap:6px;max-height:190px;overflow-y:auto;padding:2px 0}
+.ep-btn{padding:6px 12px;border-radius:7px;font-size:12px;font-weight:600;background:var(--s2);border:1px solid var(--bd);color:var(--tx);transition:all .18s;cursor:pointer}
+.ep-btn:hover{border-color:var(--primary);color:var(--primary)}.ep-btn.on{background:linear-gradient(135deg,var(--primary),var(--primary2));border-color:var(--primary);color:#fff;box-shadow:0 0 10px rgba(79,124,255,.3)}
+
+/* PLAYER */
+.player-page{padding-top:var(--nh);min-height:100vh}
+.player-wrap{position:relative;background:#000;width:100%;aspect-ratio:16/9;max-height:calc(100vh - var(--nh) - 130px)}
+.player-wrap iframe,.player-wrap video{position:absolute;inset:0;width:100%;height:100%;border:none}
+.player-info{padding:12px clamp(10px,3vw,48px)}
+.player-title{font-family:"Orbitron",sans-serif;font-size:18px;margin-bottom:4px;letter-spacing:1px}
+.player-meta{font-size:12px;color:var(--mu);margin-bottom:10px}
+.ep-sw{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;max-height:140px;overflow-y:auto;padding:9px;background:var(--s1);border-radius:9px;border:1px solid var(--bd)}
+.no-video{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--s1);height:100%;gap:10px;text-align:center;padding:28px}
+
+/* LT PAGE */
+.lt-page{padding:calc(var(--nh) + 24px) clamp(10px,3vw,48px) 36px}
+.lt-page h1{font-family:"Orbitron",sans-serif;font-size:26px;margin-bottom:5px;letter-spacing:2px}
+.lt-page p{font-size:13px;color:var(--mu);margin-bottom:18px}
+.lt-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.lt-tab{padding:7px 16px;border-radius:8px;font-size:13px;font-weight:600;color:var(--mu);background:var(--s2);border:1px solid var(--bd);cursor:pointer;transition:all .18s}
+.lt-tab:hover{color:var(--tx)}.lt-tab.on{background:var(--gold);color:#000;border-color:var(--gold);box-shadow:0 0 12px rgba(251,191,36,.3)}
+
+/* SEARCH PAGE */
+.search-page{padding:calc(var(--nh) + 24px) clamp(10px,3vw,48px) 36px}
+.search-page h1{font-family:"Orbitron",sans-serif;font-size:26px;margin-bottom:14px;letter-spacing:2px}
+.big-search-wrap{position:relative;max-width:500px;margin-bottom:14px}
+.big-search-wrap span{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--mu);font-size:14px}
+.big-search{width:100%;background:var(--s2);border:1.5px solid var(--bd);border-radius:10px;padding:11px 14px 11px 40px;color:var(--tx);font-size:14px;font-family:"Rajdhani",sans-serif;font-weight:500;outline:none;transition:border-color .2s,box-shadow .2s}
+.big-search:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(79,124,255,.12)}
+.filter-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.f-tab{padding:6px 13px;border-radius:7px;font-size:12px;font-weight:600;background:var(--s2);border:1px solid var(--bd);color:var(--mu);cursor:pointer;transition:all .18s;text-transform:uppercase;letter-spacing:.5px}
+.f-tab:hover{color:var(--tx)}
+.f-tab.on-all{background:linear-gradient(135deg,var(--primary),var(--primary2));border-color:var(--primary);color:#fff}
+.f-tab.on-vn{background:var(--green);border-color:var(--green);color:#fff}
+.f-tab.on-lt{background:var(--gold);border-color:var(--gold);color:#000}
+.f-tab.on-ani{background:var(--purple);border-color:var(--purple);color:#000}
+.f-tab.on-yt{background:var(--yt);border-color:var(--yt);color:#fff}
+.result-count{font-size:12px;color:var(--mu);margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cw),1fr));gap:18px 12px}
+.yt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px 12px}
+
+/* CAT PAGE */
+.cat-page{padding:calc(var(--nh) + 24px) clamp(10px,3vw,48px) 36px}
+.cat-page h1{font-family:"Orbitron",sans-serif;font-size:26px;margin-bottom:14px;letter-spacing:2px}
+
+/* WATCHLIST */
+.wl-page{padding:calc(var(--nh) + 24px) clamp(10px,3vw,48px) 36px}
+.wl-page h1{font-family:"Orbitron",sans-serif;font-size:26px;margin-bottom:5px;letter-spacing:2px}
+.wl-tabs{display:flex;gap:4px;margin:13px 0 18px}
+.wl-tab{padding:7px 15px;border-radius:8px;font-size:12.5px;font-weight:600;color:var(--mu);cursor:pointer;transition:all .18s}
+.wl-tab:hover{color:var(--tx);background:var(--s2)}.wl-tab.on{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 0 16px rgba(79,124,255,.3)}
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:34vh;gap:11px;text-align:center}
+.empty-state .ico{font-size:48px}.empty-state h3{font-size:18px;font-weight:600}.empty-state p{font-size:13px;color:var(--mu)}
+
+/* SELECT */
+.sel{background:var(--s2);border:1px solid var(--bd);color:var(--tx);padding:7px 10px;border-radius:7px;font-size:12.5px;font-family:"Rajdhani",sans-serif;cursor:pointer;outline:none}
+.sel:focus{border-color:var(--primary)}
+
+/* TOAST */
+#toast{display:none;position:fixed;bottom:18px;right:18px;z-index:9999;background:rgba(11,16,32,.97);border:1px solid var(--bd);border-radius:10px;padding:11px 16px;font-size:13px;font-weight:600;box-shadow:0 8px 28px rgba(0,0,0,.6),0 0 20px rgba(79,124,255,.1);align-items:center;gap:8px;animation:tIn .25s ease;max-width:260px;pointer-events:none;backdrop-filter:blur(12px)}
+@keyframes tIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* SPINNER */
+.spin{display:inline-block;width:14px;height:14px;border:2px solid rgba(79,124,255,.2);border-top-color:var(--primary);border-radius:50%;animation:sp .7s linear infinite}
+.spin-lg{width:32px;height:32px;border-width:3px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.loading{height:65vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px}
+.loading p{font-size:13px;color:var(--mu)}
+
+/* PAGE ANIM */
+.page{animation:pi .3s ease}
+@keyframes pi{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* FOOTER */
+footer{background:var(--s1);border-top:1px solid var(--bd);padding:28px clamp(10px,3vw,48px);margin-top:24px;position:relative}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--primary),var(--primary2),transparent)}
+.ft-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:20px}
+.ft-logo{font-family:"Orbitron",sans-serif;font-size:20px;letter-spacing:2px;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 8px rgba(79,124,255,.35))}
+.ft-logo b{background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+.ft-tag{font-size:12px;color:var(--mu);margin-top:4px}
+.ft-src{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.ft-chip{font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px}
+.ft-cols{display:flex;gap:28px;flex-wrap:wrap}
+.ft-col h4{font-size:9px;font-weight:700;margin-bottom:9px;text-transform:uppercase;letter-spacing:2px;color:var(--primary)}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.ft-col ul li a{font-size:12px;color:var(--mu);cursor:pointer;transition:color .15s}.ft-col ul li a:hover{color:var(--accent)}
+.ft-bot{border-top:1px solid var(--bd);padding-top:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--mu)}
+
+@media(max-width:768px){
+  :root{--cw:132px;--ch:198px}
+  .nav-links{display:none}
+  .det-body{flex-direction:column;gap:14px}
+  .det-poster{width:120px;height:180px}
+  .search-box{width:135px}.search-box:focus-within{width:172px}
+  .yt-card{width:175px}.yt-thumb{height:99px}
+}
+@media(max-width:480px){.hero{height:68vh}.hcont{left:13px;right:13px}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════════
+//  API SOURCES:
+//  🇻🇳 KKPhim   → phimapi.com      (Phim Việt)
+//  🎌  Jikan    → api.jikan.moe    (Anime)
+//  🔴  YouTube  → Invidious API    (YT search, no key)
+//  📺  VidSrc   → vidsrc.icu       (Anime player)
+//
+//  CORS: auto proxy khi mở file local
+// ═══════════════════════════════════════════════════
+const KK   = 'https://phimapi.com';
+const JK   = 'https://api.jikan.moe/v4';
+const VS   = 'https://vidsrc.icu/embed';
+const KIMG = 'https://phimimg.com';
+
+// Invidious instances (fallback list)
+const INV_HOSTS = [
+  'https://inv.nadeko.net',
+  'https://invidious.privacydev.net',
+  'https://yt.artemislena.eu',
+];
+
+function isLocal(){ return /^(file|content|null):/.test(location.protocol); }
+function px(url){ return isLocal() ? 'https://corsproxy.io/?' + encodeURIComponent(url) : url; }
+function kkUrl(p){ return px(KK + p); }
+function jkUrl(p){ return px(JK + p); }
+
+function fixImg(u){
+  if(!u) return null;
+  if(u.startsWith('http')) return u;
+  if(u.startsWith('upload/')) return KIMG + '/' + u;
+  return KIMG + '/upload/vod/' + u;
+}
+const PH = (w,h) => `https://placehold.co/${w||155}x${h||232}/111820/64748b?text=...`;
+const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+// ── CACHE ──
+const CACHE = new Map();
+async function get(url, bust){
+  if(!bust && CACHE.has(url)) return CACHE.get(url);
+  const r = await fetch(url, {headers:{'Accept':'application/json'}});
+  if(!r.ok) throw new Error('HTTP ' + r.status);
+  const d = await r.json();
+  if(!bust) CACHE.set(url, d);
+  return d;
+}
+
+// ── KKPhim ──
+const kkNew    = p   => get(kkUrl('/danh-sach/phim-moi-cap-nhat?page='+(p||1)));
+const kkCat    = (t,p)=> get(kkUrl('/v1/api/danh-sach/'+t+'?page='+(p||1)+'&limit=24'));
+const kkDetail = s   => get(kkUrl('/phim/'+s), true);
+const kkSearch = (q,p)=> get(kkUrl('/v1/api/tim-kiem?keyword='+encodeURIComponent(q)+'&limit=24&page='+(p||1)));
+
+// LỒng tiếng: KKPhim có endpoint riêng
+const KK_LT_URL = (p) => kkUrl('/v1/api/danh-sach/phim-bo?lang=long-tieng&page='+(p||1)+'&limit=24');
+const KK_TM_URL = (p) => kkUrl('/v1/api/danh-sach/phim-bo?lang=thuyet-minh&page='+(p||1)+'&limit=24');
+const KK_LT_LE  = (p) => kkUrl('/v1/api/danh-sach/phim-le?lang=long-tieng&page='+(p||1)+'&limit=24');
+
+function kkI(d){ return (d&&d.data&&d.data.items)||(d&&d.items)||[]; }
+function kkP(d){ return (d&&d.data&&d.data.params&&d.data.params.pagination&&d.data.params.pagination.totalPages)||1; }
+
+// ── Jikan ──
+const jkTop    = p  => get(jkUrl('/top/anime?page='+(p||1)+'&limit=24'));
+const jkSeason = () => get(jkUrl('/seasons/now?limit=24'));
+const jkSearch = (q,p) => get(jkUrl('/anime?q='+encodeURIComponent(q)+'&page='+(p||1)+'&limit=24'));
+const jkDetail = id => get(jkUrl('/anime/'+id+'/full'));
+
+// ── YouTube via Invidious ──
+async function ytSearch(q, page){
+  page = page||1;
+  for(const host of INV_HOSTS){
+    try{
+      const url = px(host+'/api/v1/search?q='+encodeURIComponent(q)+'&page='+page+'&type=video');
+      const d = await get(url, true);
+      if(Array.isArray(d) && d.length) return d.filter(v=>v.type==='video'&&v.videoId);
+    }catch(e){ continue; }
+  }
+  return [];
+}
+function ytThumb(v){
+  if(!v.videoThumbnails || !v.videoThumbnails.length) return PH(210,118);
+  return v.videoThumbnails.find(t=>t.quality==='medium')?.url
+    || v.videoThumbnails.find(t=>t.quality==='default')?.url
+    || `https://i.ytimg.com/vi/${v.videoId}/mqdefault.jpg`;
+}
+function fmtSec(s){ if(!s) return ''; const m=Math.floor(s/60); const sc=s%60; return m+':'+(sc<10?'0':'')+sc; }
+
+// VidSrc
+const vsAnime = (id,ep,dub) => `${VS}/anime/${id}/${ep||1}/${dub||0}`;
+
+// ═══════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════
+const S = {
+  page: 'home',
+  // navigation data
+  slug: null, malId: null, ytId: null,
+  q: '', src: 'all',
+  cat: '', ltTab: 'bo-lt',
+  epIdx: 0, svIdx: 0, epNum: 1, dub: 0,
+  // user data
+  wl: JSON.parse(localStorage.getItem('lp_wl')||'[]'),
+  hist: JSON.parse(localStorage.getItem('lp_h')||'[]'),
+};
+
+const inWL = id => S.wl.some(m=>m.uid===String(id));
+
+window.toggleWL = function(raw){
+  const m = typeof raw==='string' ? JSON.parse(raw) : raw;
+  const k = String(m.uid);
+  if(inWL(k)){ S.wl=S.wl.filter(x=>x.uid!==k); showToast('💔 Đã xóa khỏi yêu thích'); }
+  else { S.wl.unshift(m); showToast('❤️ Đã thêm vào yêu thích'); }
+  localStorage.setItem('lp_wl', JSON.stringify(S.wl));
+  const fb = document.getElementById('fav-btn');
+  if(fb){ const on=inWL(k); fb.className='fav-btn'+(on?' on':''); fb.textContent=on?'❤️':'🤍'; }
+};
+
+function addHist(m){
+  S.hist = [m, ...S.hist.filter(x=>x.uid!==m.uid)].slice(0,80);
+  localStorage.setItem('lp_h', JSON.stringify(S.hist));
+}
+
+let _toast;
+function showToast(msg){
+  clearTimeout(_toast);
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.style.display = 'flex';
+  _toast = setTimeout(()=>{ el.style.display='none'; }, 2600);
+}
+
+window.go = function(page, opts){
+  opts = opts||{};
+  S.page = page;
+  ['slug','malId','ytId','q','src','cat','ltTab'].forEach(k=>{ if(opts[k]!==undefined) S[k]=opts[k]; });
+  S.epIdx=0; S.svIdx=0; S.epNum=1; S.dub=0;
+  window.scrollTo({top:0,behavior:'smooth'});
+  render();
+};
+
+// ═══════════════════════════════════════
+//  BADGE + TEXT
+// ═══════════════════════════════════════
+function kkBadge(m){
+  const t = m.type||'';
+  const lang = (m.lang||'').toLowerCase();
+  const isLT = lang.includes('lồng')||lang.includes('long')||lang.includes('thuyết');
+  if(isLT) return '<span class="c-badge cb-lt">🔊 LỒNG TIẾNG</span>';
+  if(t==='series')   return '<span class="c-badge cb-bo">PHIM BỘ</span>';
+  if(t==='single')   return '<span class="c-badge cb-le">PHIM LẺ</span>';
+  if(t==='hoathinh') return '<span class="c-badge cb-hh">HOẠT HÌNH</span>';
+  return '<span class="c-badge cb-vn">🇻🇳</span>';
+}
+function kkTxt(m){
+  const t=m.type||'';
+  if(t==='series')   return 'PHIM BỘ';
+  if(t==='single')   return 'PHIM LẺ';
+  if(t==='hoathinh') return 'HOẠT HÌNH';
+  return 'PHIM VIỆT';
+}
+
+// ═══════════════════════════════════════
+//  CARD BUILDERS
+// ═══════════════════════════════════════
+function CardKK(m){
+  const title = esc(m.name||m.title||'?');
+  const sub   = esc(m.origin_name||'');
+  const year  = m.year||'';
+  const slug  = m.slug||'';
+  const po    = fixImg(m.poster_url||m.thumb_url)||PH();
+  const ep    = m.episode_current||'';
+  return `<div class="card" onclick="go('det-kk',{slug:'${slug}'})">
+    <div class="c-poster">
+      <img src="${po}" alt="${title}" loading="lazy" onerror="this.src='${PH()}'">
+      ${kkBadge(m)}
+      ${ep?`<span class="c-ep">${esc(ep)}</span>`:''}
+      <div class="c-ov"><div class="c-play" onclick="event.stopPropagation();go('play-kk',{slug:'${slug}'})">▶</div></div>
+    </div>
+    <div class="c-info">
+      <div class="c-title">${title}</div>
+      ${sub&&sub!==title?`<div class="c-sub">${sub}</div>`:''}
+      <div class="c-sub">${year}</div>
+    </div>
+  </div>`;
+}
+
+function CardAnime(m){
+  const d     = m.node||m;
+  const title = esc(d.title||'?');
+  const eng   = esc(d.title_english||'');
+  const year  = d.year||'';
+  const rat   = d.score?d.score.toFixed(1):'';
+  const id    = d.mal_id;
+  const imgs  = d.images||{};
+  const po    = (imgs.jpg&&(imgs.jpg.large_image_url||imgs.jpg.image_url))||(imgs.webp&&imgs.webp.image_url)||PH();
+  const eps   = d.episodes?d.episodes+'ep':'';
+  return `<div class="card" onclick="go('det-ani',{malId:${id}})">
+    <div class="c-poster">
+      <img src="${po}" alt="${title}" loading="lazy" onerror="this.src='${PH()}'">
+      <span class="c-badge cb-ani">ANIME</span>
+      ${rat?`<span class="c-rat">⭐${rat}</span>`:''}
+      ${eps?`<span class="c-ep">${eps}</span>`:''}
+      <div class="c-ov"><div class="c-play" onclick="event.stopPropagation();go('play-ani',{malId:${id}})">▶</div></div>
+    </div>
+    <div class="c-info">
+      <div class="c-title">${title}</div>
+      ${eng&&eng!==title?`<div class="c-sub">${eng}</div>`:''}
+      <div class="c-sub">${year}</div>
+    </div>
+  </div>`;
+}
+
+function CardYT(v){
+  const id    = v.videoId||'';
+  const title = esc(v.title||'');
+  const ch    = esc(v.author||'');
+  const dur   = fmtSec(v.lengthSeconds||0);
+  const thumb = ytThumb(v);
+  return `<div class="yt-card" onclick="go('play-yt',{ytId:'${id}'})">
+    <div class="yt-thumb">
+      <img src="${esc(thumb)}" alt="${title}" loading="lazy" onerror="this.src='${PH(210,118)}'">
+      ${dur?`<span class="yt-dur">${dur}</span>`:''}
+    </div>
+    <div class="yt-info">
+      <div class="yt-title">${title}</div>
+      <div class="yt-ch">📺 ${ch}</div>
+    </div>
+  </div>`;
+}
+
+function skRow(n=10){
+  return '<div class="row">' + Array(n).fill(`<div class="sk sk-p"></div>`).join('') + '</div>';
+}
+function skYTRow(n=8){
+  return '<div class="row">' + Array(n).fill(`<div class="sk sk-yt"></div>`).join('') + '</div>';
+}
+function skGrid(n=20){
+  return '<div class="grid">' + Array(n).fill(`<div class="sk sk-p" style="height:${232}px"></div>`).join('') + '</div>';
+}
+
+// ═══════════════════════════════════════
+//  NAV
+// ═══════════════════════════════════════
+function renderNav(){
+  const p = S.page;
+  const isOn = (pg, cat) => (p===pg && (!cat||S.cat===cat)) ? 'on' : '';
+  return `<div id="nav">
+    <div class="logo" onclick="go('home')">KHANHNAM<b>.MOVIE</b></div>
+    <ul class="nav-links">
+      <li><a class="${isOn('home')}" onclick="go('home')">Trang chủ</a></li>
+      <li><a class="${isOn('cat','phim-moi')}" onclick="go('cat',{cat:'phim-moi'})">Phim mới</a></li>
+      <li><a class="${isOn('cat','phim-le')}" onclick="go('cat',{cat:'phim-le'})">Phim lẻ</a></li>
+      <li><a class="${isOn('cat','phim-bo')}" onclick="go('cat',{cat:'phim-bo'})">Phim bộ</a></li>
+      <li><a class="${p==='lt'?'on':''}" onclick="go('lt')" style="color:${p==='lt'?'var(--gold)':''}">🔊 Lồng tiếng</a></li>
+      <li><a class="${isOn('cat','anime')}" onclick="go('cat',{cat:'anime'})">Anime 🎌</a></li>
+      <li><a class="${isOn('cat','yt')}" onclick="go('cat',{cat:'yt'})" style="color:${isOn('cat','yt')?'':S.cat==='yt'?'var(--yt)':''}">🔴 YouTube</a></li>
+      <li><a onclick="go('watchlist')">Yêu thích</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-wrap" id="sw">
+        <div class="search-box">
+          <span style="color:var(--mu);font-size:14px">🔍</span>
+          <input type="text" placeholder="Tìm phim, anime, YT..." id="nav-q"
+            value="${p==='search'?esc(S.q):''}"
+            autocomplete="off"
+            oninput="navInput(this.value)"
+            onkeydown="if(event.key==='Enter'){go('search',{q:this.value});closeNav()}"
+            onfocus="navInput(this.value)"/>
+        </div>
+        <div id="drop"></div>
+      </div>
+      <div style="width:34px;height:34px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;cursor:pointer;color:#fff;flex-shrink:0" onclick="go('watchlist')">
+        ${S.wl.length||'👤'}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderFooter(){
+  return `<footer>
+    <div class="ft-row">
+      <div>
+        <div class="ft-logo">KHANHNAM<b>.MOVIE</b></div>
+        <div class="ft-tag">Phim Việt · Anime · YouTube — Hoàn toàn miễn phí</div>
+        <div class="ft-src">
+          <span class="ft-chip" style="background:rgba(16,185,129,.15);color:var(--green)">🇻🇳 KKPhim</span>
+          <span class="ft-chip" style="background:rgba(168,85,247,.15);color:var(--purple)">🎌 Jikan/MAL</span>
+          <span class="ft-chip" style="background:rgba(255,0,0,.15);color:var(--yt)">🔴 YouTube</span>
+          <span class="ft-chip" style="background:rgba(59,130,246,.15);color:var(--blue)">📺 VidSrc</span>
+        </div>
+      </div>
+      <div class="ft-cols">
+        <div class="ft-col"><h4>Phim Việt</h4><ul>
+          <li><a onclick="go('cat',{cat:'phim-moi'})">Phim mới</a></li>
+          <li><a onclick="go('cat',{cat:'phim-le'})">Phim lẻ</a></li>
+          <li><a onclick="go('cat',{cat:'phim-bo'})">Phim bộ</a></li>
+          <li><a onclick="go('lt')" style="color:var(--gold)">🔊 Lồng tiếng</a></li>
+          <li><a onclick="go('cat',{cat:'hoat-hinh'})">Hoạt hình</a></li>
+        </ul></div>
+        <div class="ft-col"><h4>Anime</h4><ul>
+          <li><a onclick="go('cat',{cat:'anime'})">Top Anime</a></li>
+          <li><a onclick="go('cat',{cat:'anime-now'})">Đang chiếu</a></li>
+        </ul></div>
+        <div class="ft-col"><h4>YouTube</h4><ul>
+          <li><a onclick="go('cat',{cat:'yt'})">Tìm kiếm YT</a></li>
+        </ul></div>
+        <div class="ft-col"><h4>Tài khoản</h4><ul>
+          <li><a onclick="go('watchlist')">Yêu thích</a></li>
+          <li><a onclick="go('watchlist')">Lịch sử xem</a></li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div>© 2026 KHANHNAM.MOVIE</div>
+      <div>KKPhim · Jikan · Invidious · VidSrc</div>
+    </div>
+  </footer>`;
+}
+
+function setupNavScroll(){
+  const nav=document.getElementById('nav'); if(!nav) return;
+  window.removeEventListener('scroll',window._ns);
+  window._ns=()=>nav.style.background=window.scrollY>40?'rgba(7,9,15,.99)':'rgba(7,9,15,.96)';
+  window.addEventListener('scroll',window._ns); window._ns();
+}
+
+// ═══════════════════════════════════════
+//  HOME PAGE
+// ═══════════════════════════════════════
+async function pgHome(){
+  const app=document.getElementById('app');
+  app.innerHTML = renderNav() + `<div class="page" id="hp">
+    <div class="hero" style="display:flex;align-items:center;justify-content:center;background:var(--s1)">
+      <div style="text-align:center"><div class="spin spin-lg" style="margin:0 auto 12px"></div><p style="font-size:13px;color:var(--mu)">Đang tải phim...</p></div>
+    </div>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">🆕 Phim Việt mới</h2></div>${skRow()}</section>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">🔊 Lồng tiếng</h2></div>${skRow()}</section>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">📺 Phim bộ</h2></div>${skRow()}</section>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">🎬 Phim lẻ</h2></div>${skRow()}</section>
+    <div class="div-row"><div class="div-line"></div><span class="div-label" style="background:rgba(255,0,0,.1);color:var(--yt)">🔴 YOUTUBE</span><div class="div-line"></div></div>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">🔴 Phim hot trên YouTube</h2></div>${skYTRow()}</section>
+    <div class="div-row"><div class="div-line"></div><span class="div-label" style="background:rgba(168,85,247,.1);color:var(--purple)">🎌 ANIME</span><div class="div-line"></div></div>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">📅 Anime đang chiếu</h2></div>${skRow()}</section>
+    <section class="sec"><div class="sec-head"><h2 class="sec-title">🏆 Top Anime</h2></div>${skRow()}</section>
+  </div>`;
+  setupNavScroll();
+
+  let kkN,kkBo,kkLe,kkLT,jkS,jkT,ytV=[];
+  try{
+    [kkN,kkBo,kkLe,jkS,jkT] = await Promise.all([
+      kkNew(1), kkCat('phim-bo',1), kkCat('phim-le',1), jkSeason(), jkTop(1)
+    ]);
+    // Lồng tiếng
+    try{ kkLT = await get(KK_LT_URL(1)); }catch(e){ kkLT=null; }
+    // YouTube
+    try{ ytV = await ytSearch('phim chiếu rạp 2024 hay nhất',1); }catch(e){ ytV=[]; }
+  }catch(e){
+    const hp2=document.getElementById('hp');
+    if(hp2) hp2.innerHTML=`<div style="padding:160px 0;text-align:center"><div style="font-size:36px">😞</div><div style="font-size:14px;color:var(--mu);margin-top:11px">Lỗi kết nối API. Kiểm tra mạng.</div><button class="btn btn-red" onclick="pgHome()" style="margin-top:14px">Thử lại</button></div>`+renderFooter();
+    return;
+  }
+
+  const hp=document.getElementById('hp'); if(!hp) return;
+
+  const newItems  = (kkN&&kkN.items||[]).slice(0,24);
+  const boItems   = kkI(kkBo).slice(0,24);
+  const leItems   = kkI(kkLe).slice(0,24);
+  const ltItems   = kkI(kkLT).slice(0,24);
+  const aniSItems = (jkS&&jkS.data||[]).slice(0,24);
+  const aniTItems = (jkT&&jkT.data||[]).slice(0,24);
+
+  // Hero slides: mix phim mới + anime top
+  const featured = [...newItems.slice(0,4), ...aniTItems.slice(0,3)];
+  const heroHTML = featured.map((m,i)=>{
+    let bg,title,ori,year,ep,desc,srcBadge,bw,bi;
+    if(m.slug){
+      bg=fixImg(m.thumb_url)||fixImg(m.poster_url)||PH(1280,720);
+      title=m.name||''; ori=m.origin_name||''; year=m.year||''; ep=m.episode_current||''; desc=m.content||m.description||'';
+      srcBadge=`<span class="h-src" style="background:var(--green)">🇻🇳 ${kkTxt(m)}</span>`;
+      bw=`go('play-kk',{slug:'${m.slug}'})`; bi=`go('det-kk',{slug:'${m.slug}'})`;
+    }else{
+      const imgs=m.images||{};
+      bg=(imgs.jpg&&imgs.jpg.large_image_url)||(imgs.webp&&imgs.webp.large_image_url)||PH(1280,720);
+      title=m.title||''; ori=m.title_english||''; year=m.year||''; ep=''; desc=m.synopsis||'';
+      srcBadge=`<span class="h-src" style="background:var(--purple)">🎌 ANIME</span>`;
+      bw=`go('play-ani',{malId:${m.mal_id}})`; bi=`go('det-ani',{malId:${m.mal_id}})`;
+    }
+    return `<div class="hslide${i===0?' on':''}">
+      <div class="hbg" style="background-image:url('${esc(bg)}')"></div>
+      <div class="hgrad"></div>
+      <div class="hcont">
+        ${srcBadge}
+        <h1 class="h-title">${esc(title)}</h1>
+        <div class="h-meta">
+          ${year?`<span>${year}</span>`:''}
+          ${ep?`<span class="h-chip">${esc(ep)}</span>`:''}
+          ${ori&&ori!==title?`<span style="color:var(--mu)">${esc(ori)}</span>`:''}
+        </div>
+        <p class="h-desc">${esc(desc)}</p>
+        <div class="h-btns">
+          <button class="btn btn-red" onclick="${bw}">▶ Xem ngay</button>
+          <button class="btn btn-ghost" onclick="${bi}">ℹ Chi tiết</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  const dotsHTML = featured.map((_,i)=>`<button class="hdot${i===0?' on':''}" onclick="setSlide(${i})"></button>`).join('');
+
+  const ytHTML = ytV.length
+    ? ytV.map(CardYT).join('')
+    : `<div style="color:var(--mu);font-size:13px;padding:18px">YouTube không load. <a onclick="go('cat',{cat:'yt'})" style="color:var(--yt);cursor:pointer">Tìm thủ công →</a></div>`;
+
+  hp.innerHTML = `
+    <div class="hero" id="hero">${heroHTML}<div class="hdots">${dotsHTML}</div></div>
+    <section class="sec">
+      <div class="sec-head"><h2 class="sec-title">🆕 Phim Việt mới cập nhật</h2><a class="see-all" onclick="go('cat',{cat:'phim-moi'})">Tất cả →</a></div>
+      <div class="row">${newItems.map(CardKK).join('')}</div>
+    </section>
+    <section class="sec" style="background:linear-gradient(180deg,transparent,var(--s1) 20%,var(--s1) 80%,transparent)">
+      <div class="sec-head"><h2 class="sec-title">🔊 Lồng tiếng / Thuyết minh</h2><a class="see-all" onclick="go('lt')">Tất cả →</a></div>
+      <div class="row">${ltItems.length ? ltItems.map(CardKK).join('') : newItems.slice(4,16).map(CardKK).join('')}</div>
+    </section>
+    <section class="sec">
+      <div class="sec-head"><h2 class="sec-title">📺 Phim bộ Vietsub</h2><a class="see-all" onclick="go('cat',{cat:'phim-bo'})">Tất cả →</a></div>
+      <div class="row">${boItems.map(CardKK).join('')}</div>
+    </section>
+    <section class="sec" style="background:linear-gradient(180deg,transparent,var(--s1) 20%,var(--s1) 80%,transparent)">
+      <div class="sec-head"><h2 class="sec-title">🎬 Phim lẻ Vietsub</h2><a class="see-all" onclick="go('cat',{cat:'phim-le'})">Tất cả →</a></div>
+      <div class="row">${leItems.map(CardKK).join('')}</div>
+    </section>
+    <div class="div-row"><div class="div-line"></div><span class="div-label" style="background:rgba(255,0,0,.1);color:var(--yt)">🔴 YOUTUBE</span><div class="div-line"></div></div>
+    <section class="sec">
+      <div class="sec-head"><h2 class="sec-title">🔴 Phim hot YouTube</h2><a class="see-all" onclick="go('cat',{cat:'yt'})">Tìm kiếm →</a></div>
+      <div class="row">${ytHTML}</div>
+    </section>
+    <div class="div-row"><div class="div-line"></div><span class="div-label" style="background:rgba(168,85,247,.1);color:var(--purple)">🎌 ANIME</span><div class="div-line"></div></div>
+    <section class="sec">
+      <div class="sec-head"><h2 class="sec-title">📅 Anime đang chiếu</h2><a class="see-all" onclick="go('cat',{cat:'anime-now'})">Tất cả →</a></div>
+      <div class="row">${aniSItems.map(CardAnime).join('')}</div>
+    </section>
+    <section class="sec">
+      <div class="sec-head"><h2 class="sec-title">🏆 Top Anime mọi thời đại</h2><a class="see-all" onclick="go('cat',{cat:'anime'})">Tất cả →</a></div>
+      <div class="row">${aniTItems.map(CardAnime).join('')}</div>
+    </section>
+    ${renderFooter()}`;
+
+  // Hero carousel
+  let idx=0;
+  const slides=hp.querySelectorAll('.hslide'), dots=hp.querySelectorAll('.hdot');
+  window.setSlide = i => {
+    slides[idx]?.classList.remove('on'); dots[idx]?.classList.remove('on');
+    idx=i;
+    slides[idx]?.classList.add('on'); dots[idx]?.classList.add('on');
+  };
+  clearInterval(window._ht);
+  window._ht = setInterval(()=>setSlide((idx+1)%slides.length), 5800);
+}
+
+// ═══════════════════════════════════════
+//  LỒNG TIẾNG PAGE — nút bấm hoạt động
+// ═══════════════════════════════════════
+async function pgLT(){
+  const app=document.getElementById('app');
+  app.innerHTML = renderNav() + `<div class="lt-page page">
+    <h1>🔊 Lồng tiếng / Thuyết minh</h1>
+    <p>Phim bộ và phim lẻ có lồng tiếng Việt Nam</p>
+    <div class="lt-tabs">
+      <button class="lt-tab ${S.ltTab==='bo-lt'?'on':''}" onclick="switchLT('bo-lt')">📺 Phim bộ lồng tiếng</button>
+      <button class="lt-tab ${S.ltTab==='bo-tm'?'on':''}" onclick="switchLT('bo-tm')">📺 Phim bộ thuyết minh</button>
+      <button class="lt-tab ${S.ltTab==='le-lt'?'on':''}" onclick="switchLT('le-lt')">🎬 Phim lẻ lồng tiếng</button>
+      <button class="lt-tab ${S.ltTab==='search-lt'?'on':''}" onclick="switchLT('search-lt')">🔍 Tìm lồng tiếng</button>
+    </div>
+    <div id="lt-count" class="result-count">Đang tải...</div>
+    <div id="lt-grid" class="grid">${skGrid(20)}</div>
+    <div id="lt-more" style="text-align:center;margin-top:18px"></div>
+  </div>`;
+  setupNavScroll();
+  await loadLT(1);
+}
+
+window.switchLT = function(tab){
+  S.ltTab = tab;
+  // Update tab UI
+  document.querySelectorAll('.lt-tab').forEach((el,i)=>{
+    const tabs=['bo-lt','bo-tm','le-lt','search-lt'];
+    el.className = 'lt-tab' + (tabs[i]===tab?' on':'');
+  });
+  loadLT(1);
+};
+
+let _ltPage=1;
+window.loadLT = async function(p){
+  p=p||1; _ltPage=p;
+  const grid=document.getElementById('lt-grid');
+  const count=document.getElementById('lt-count');
+  const more=document.getElementById('lt-more');
+  if(!grid) return;
+  if(p===1) grid.innerHTML=skGrid(20);
+
+  try{
+    let items=[], total=1;
+    if(S.ltTab==='bo-lt'){
+      const d=await get(KK_LT_URL(p)); items=kkI(d); total=kkP(d);
+      // fallback nếu endpoint lang không hoạt động
+      if(!items.length){ const d2=await kkSearch('lồng tiếng phim bộ',p); items=kkI(d2); total=kkP(d2); }
+    } else if(S.ltTab==='bo-tm'){
+      const d=await get(KK_TM_URL(p)); items=kkI(d); total=kkP(d);
+      if(!items.length){ const d2=await kkSearch('thuyết minh phim bộ',p); items=kkI(d2); total=kkP(d2); }
+    } else if(S.ltTab==='le-lt'){
+      const d=await get(KK_LT_LE(p)); items=kkI(d); total=kkP(d);
+      if(!items.length){ const d2=await kkSearch('lồng tiếng phim lẻ',p); items=kkI(d2); total=kkP(d2); }
+    } else if(S.ltTab==='search-lt'){
+      // Search cả lồng tiếng + thuyết minh
+      const [r1,r2]=await Promise.all([
+        kkSearch('lồng tiếng',p).catch(()=>null),
+        kkSearch('thuyết minh',p).catch(()=>null),
+      ]);
+      const i1=kkI(r1); const i2=kkI(r2);
+      const seen=new Set();
+      items=[...i1,...i2].filter(m=>{ if(seen.has(m.slug))return false; seen.add(m.slug); return true; });
+      total=Math.max(kkP(r1),kkP(r2));
+    }
+
+    const cards=items.map(CardKK).join('');
+    if(p===1){ grid.innerHTML=cards||'<div style="text-align:center;padding:48px;color:var(--mu)">Không có dữ liệu.</div>'; }
+    else{ grid.insertAdjacentHTML('beforeend',cards); }
+    if(count) count.textContent=`${items.length} phim · Trang ${p}${total>1?'/'+total:''}`;
+    if(more) more.innerHTML=p<Math.min(total,20)?`<button class="btn btn-ghost" onclick="loadLT(${p+1})">Tải thêm ↓</button>`:'';
+  }catch(e){
+    if(grid) grid.innerHTML=`<div style="text-align:center;padding:48px;color:var(--mu)">Lỗi: ${esc(e.message)}</div>`;
+  }
+};
+
+// ═══════════════════════════════════════
+//  CATEGORY PAGE
+// ═══════════════════════════════════════
+const CAT_LABEL = {
+  'phim-moi':'🆕 Phim mới', 'phim-le':'🎬 Phim lẻ', 'phim-bo':'📺 Phim bộ',
+  'hoat-hinh':'🎌 Hoạt hình', 'tv-shows':'📡 TV Shows',
+  'anime':'🏆 Top Anime', 'anime-now':'📅 Anime đang chiếu',
+  'yt':'🔴 Tìm kiếm YouTube',
+};
+async function pgCat(){
+  const app=document.getElementById('app');
+  const isYT = S.cat==='yt';
+  app.innerHTML = renderNav() + `<div class="cat-page page">
+    <h1>${CAT_LABEL[S.cat]||S.cat}</h1>
+    ${isYT?`<div class="big-search-wrap" style="margin-bottom:14px">
+      <span>🔍</span>
+      <input class="big-search" id="yt-q" type="text" placeholder="Tìm video YouTube..." autocomplete="off"
+        oninput="ytLive(this.value)"
+        onkeydown="if(event.key==='Enter'){clearTimeout(window._ytT);loadYT(this.value,1)}"/>
+    </div>`:''}
+    <div id="cat-count" class="result-count">Đang tải...</div>
+    <div id="cat-grid" class="${isYT?'yt-grid':'grid'}">${isYT?skGrid(12).replace(/sk-p/g,'sk-yt'):skGrid(24)}</div>
+    <div id="cat-more" style="text-align:center;margin-top:18px"></div>
+  </div>`;
+  setupNavScroll();
+  if(isYT){
+    const inp=document.getElementById('yt-q'); if(inp) inp.focus();
+    await loadYT('phim hay vietsub 2024',1);
+  } else {
+    await loadCat(1);
+  }
+}
+
+// YouTube loader
+let _ytQ='', _ytPage=1;
+window.loadYT = async function(q,p){
+  _ytQ=q||_ytQ; _ytPage=p||1;
+  const grid=document.getElementById('cat-grid'), count=document.getElementById('cat-count'), more=document.getElementById('cat-more');
+  if(!grid) return;
+  if(p===1) grid.innerHTML='<div class="yt-grid">'+Array(12).fill('<div class="sk sk-yt"></div>').join('')+'</div>';
+  try{
+    const vids=await ytSearch(_ytQ,_ytPage);
+    const cards=vids.map(CardYT).join('');
+    if(p===1){ grid.innerHTML=cards||'<div style="text-align:center;padding:48px;color:var(--mu)">Không tìm thấy.</div>'; }
+    else{ grid.insertAdjacentHTML('beforeend',cards); }
+    if(count) count.textContent=vids.length?`${vids.length} video cho "${_ytQ}"`:' ';
+    if(more) more.innerHTML=vids.length>=5?`<button class="btn btn-ghost" onclick="loadYT('${esc(_ytQ)}',${_ytPage+1})">Tải thêm ↓</button>`:'';
+  }catch(e){ if(grid) grid.innerHTML=`<div style="text-align:center;padding:48px;color:var(--mu)">Lỗi YouTube: ${esc(e.message)}</div>`; }
+};
+window.ytLive=function(q){ clearTimeout(window._ytT); if(!q.trim())return; window._ytT=setTimeout(()=>loadYT(q,1),500); };
+
+// KK/Jikan loader
+window.loadCat = async function(p){
+  p=p||1;
+  const grid=document.getElementById('cat-grid'), count=document.getElementById('cat-count'), more=document.getElementById('cat-more');
+  if(!grid) return;
+  if(p===1) grid.innerHTML=skGrid(24);
+  try{
+    let items=[], total=1, cardFn=CardKK;
+    if(S.cat==='phim-moi'){ const d=await kkNew(p); items=d&&d.items||[]; total=(d&&d.pagination&&d.pagination.totalPages)||1; }
+    else if(['phim-le','phim-bo','hoat-hinh','tv-shows'].includes(S.cat)){ const d=await kkCat(S.cat,p); items=kkI(d); total=kkP(d); }
+    else if(S.cat==='anime'){ const d=await jkTop(p); items=d&&d.data||[]; total=(d&&d.pagination&&d.pagination.last_visible_page)||1; cardFn=CardAnime; }
+    else if(S.cat==='anime-now'){ const d=await jkSeason(); items=d&&d.data||[]; total=1; cardFn=CardAnime; }
+    const cards=items.map(cardFn).join('');
+    if(p===1){ grid.innerHTML=cards||'<div style="text-align:center;padding:48px;color:var(--mu)">Không có dữ liệu.</div>'; }
+    else{ grid.insertAdjacentHTML('beforeend',cards); }
+    if(count) count.textContent=`Trang ${p}${total>1?'/'+total:''}`;
+    if(more) more.innerHTML=p<Math.min(total,20)?`<button class="btn btn-ghost" onclick="loadCat(${p+1})">Tải thêm ↓</button>`:'';
+  }catch(e){ if(grid) grid.innerHTML=`<div style="text-align:center;padding:48px;color:var(--mu)">Lỗi: ${esc(e.message)}</div>`; }
+};
+
+// ═══════════════════════════════════════
+//  DETAIL — KKPhim
+// ═══════════════════════════════════════
+async function pgDetKK(){
+  const app=document.getElementById('app');
+  app.innerHTML=renderNav()+`<div class="det page"><div class="loading"><div class="spin spin-lg"></div><p>Đang tải phim...</p></div></div>`;
+  setupNavScroll();
+  let data, movie, episodes=[];
+  try{ data=await kkDetail(S.slug); movie=data&&data.movie||data; episodes=data&&data.episodes||[]; }
+  catch(e){ app.innerHTML=renderNav()+`<div class="det page"><div class="empty-state" style="padding-top:80px"><div class="ico">😕</div><h3>Không tìm thấy phim</h3><p>${esc(e.message)}</p><button class="btn btn-red" onclick="go('home')" style="margin-top:13px">Về trang chủ</button></div></div>`; return; }
+
+  const title=movie.name||'', ori=movie.origin_name||'', year=movie.year||'';
+  const ep=movie.episode_current||'', tot=movie.episode_total||'';
+  const lang=(movie.lang||'').toLowerCase();
+  const isLT=lang.includes('lồng')||lang.includes('long')||lang.includes('thuyết');
+  const bg=fixImg(movie.thumb_url)||fixImg(movie.poster_url)||'';
+  const po=fixImg(movie.poster_url)||fixImg(movie.thumb_url)||PH(180,270);
+  const gens=(movie.category||[]).map(g=>`<span class="gtag vn">${esc(g.name||g)}</span>`).join('');
+  const countries=(movie.country||[]).map(c=>c.name||c).join(', ');
+  const wl=inWL('kk_'+(movie._id||movie.slug));
+  const wlData=JSON.stringify({uid:'kk_'+(movie._id||movie.slug),name:movie.name,thumb:fixImg(movie.thumb_url||movie.poster_url),year,src:'kk',slug:movie.slug||S.slug});
+
+  let epHTML='';
+  if(episodes.length>0){
+    const svTabs=episodes.map((sv,i)=>`<button class="sv-tab${i===0?' on':''}" id="svt${i}" onclick="swSv(${i})">${esc(sv.server_name||'Server '+(i+1))}</button>`).join('');
+    const firstEps=(episodes[0]&&episodes[0].server_data)||[];
+    const epBtns=firstEps.map((e,i)=>`<button class="ep-btn${i===0?' on':''}" onclick="playEp(${i},0)">${esc(e.name||'Tập '+(i+1))}</button>`).join('');
+    epHTML=`<div class="ep-box">
+      <h2 class="ep-box-title">Danh sách tập</h2>
+      <div class="sv-tabs" id="sv-tabs">${svTabs}</div>
+      <div class="ep-list" id="ep-list">${epBtns}</div>
+    </div>`;
+  }
+
+  let simH='';
+  try{ const sim=await kkNew(2); simH=(sim&&sim.items||[]).slice(0,10).map(CardKK).join(''); }catch(e){}
+
+  app.innerHTML=renderNav()+`<div class="det page">
+    <div class="det-hero">
+      <div class="det-bg" style="background-image:url('${esc(bg)}')"></div>
+      <div class="det-fog"></div>
+      <div class="det-body">
+        <div class="det-poster"><img src="${po}" onerror="this.src='${PH(180,270)}'"/></div>
+        <div class="det-info">
+          <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px">
+            <span style="display:inline-flex;align-items:center;gap:4px;background:rgba(16,185,129,.15);color:var(--green);font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:1px">🇻🇳 KKPhim</span>
+            ${isLT?`<span style="display:inline-flex;align-items:center;gap:4px;background:rgba(245,158,11,.15);color:var(--gold);font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px">🔊 Lồng tiếng</span>`:''}
+          </div>
+          <h1 class="det-title">${esc(title)}</h1>
+          ${ori&&ori!==title?`<div class="det-ori">${esc(ori)}</div>`:''}
+          <div class="det-chips">
+            ${movie.quality?`<span class="det-chip" style="color:#22c55e">${esc(movie.quality)}</span>`:''}
+            ${movie.lang?`<span class="det-chip">${esc(movie.lang)}</span>`:''}
+            ${year?`<span class="det-chip">${year}</span>`:''}
+            ${ep?`<span class="det-chip">Tập ${esc(ep)}${tot?'/'+esc(tot):''}</span>`:''}
+            ${countries?`<span class="det-chip">🌍 ${esc(countries)}</span>`:''}
+          </div>
+          <div class="det-genres">${gens}</div>
+          <p class="det-desc">${esc(movie.content||movie.description||'Chưa có mô tả.')}</p>
+          <div class="det-acts">
+            <button class="btn btn-red" onclick="go('play-kk',{slug:'${esc(movie.slug||S.slug)}'})">▶ Xem phim</button>
+            <button class="fav-btn${wl?' on':''}" id="fav-btn" onclick='toggleWL(${JSON.stringify(wlData)})'>${wl?'❤️':'🤍'}</button>
+            <button class="btn btn-ghost" onclick="history.length>1?history.back():go('home')">← Quay lại</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${epHTML}
+    ${simH?`<section class="sec"><div class="sec-head"><h2 class="sec-title">Phim liên quan</h2></div><div class="row">${simH}</div></section>`:''}
+    ${renderFooter()}
+  </div>`;
+  setupNavScroll();
+
+  window._eps=episodes;
+  window.swSv=function(i){
+    window._eps.forEach((_,j)=>{ const t=document.getElementById('svt'+j); if(t) t.className='sv-tab'+(j===i?' on':''); });
+    const eps=(window._eps[i]&&window._eps[i].server_data)||[];
+    const el=document.getElementById('ep-list');
+    if(el) el.innerHTML=eps.map((e,k)=>`<button class="ep-btn${k===0?' on':''}" onclick="playEp(${k},${i})">${esc(e.name||'Tập '+(k+1))}</button>`).join('');
+  };
+  window.playEp=function(ei,si){ S.epIdx=ei; S.svIdx=si; go('play-kk',{slug:movie.slug||S.slug}); };
+}
+
+// ═══════════════════════════════════════
+//  DETAIL — Anime
+// ═══════════════════════════════════════
+async function pgDetAni(){
+  const app=document.getElementById('app');
+  app.innerHTML=renderNav()+`<div class="det page"><div class="loading"><div class="spin spin-lg"></div><p>Đang tải anime...</p></div></div>`;
+  setupNavScroll();
+  let anime;
+  try{ const d=await jkDetail(S.malId); anime=d&&d.data||d; }
+  catch(e){ app.innerHTML=renderNav()+`<div class="det page"><div class="empty-state" style="padding-top:80px"><div class="ico">😕</div><h3>Không tìm thấy</h3><button class="btn btn-red" onclick="go('home')" style="margin-top:13px">Về trang chủ</button></div></div>`; return; }
+
+  const title=anime.title||'', eng=anime.title_english||anime.title_japanese||'';
+  const year=anime.year||'', rat=anime.score?anime.score.toFixed(1):'';
+  const eps=anime.episodes||0;
+  const imgs=anime.images||{};
+  const po=(imgs.jpg&&imgs.jpg.large_image_url)||(imgs.webp&&imgs.webp.image_url)||PH(180,270);
+  const gens=(anime.genres||[]).map(g=>`<span class="gtag ani">${esc(g.name)}</span>`).join('');
+  const wl=inWL('ani_'+anime.mal_id);
+  const wlData=JSON.stringify({uid:'ani_'+anime.mal_id,name:title,thumb:po,year,src:'ani',malId:anime.mal_id});
+
+  const epCount=Math.max(eps||24,1);
+  const epOpts=Array.from({length:Math.min(epCount,1000)},(_,i)=>`<option value="${i+1}">Tập ${i+1}</option>`).join('');
+  const relH=(anime.recommendations||[]).slice(0,8).map(r=>r.entry?CardAnime(r.entry):null).filter(Boolean).join('');
+
+  app.innerHTML=renderNav()+`<div class="det page">
+    <div class="det-hero">
+      <div class="det-bg" style="background-image:url('${esc(po)}');filter:blur(3px) brightness(.22)"></div>
+      <div class="det-fog"></div>
+      <div class="det-body">
+        <div class="det-poster"><img src="${po}" onerror="this.src='${PH(180,270)}'"/></div>
+        <div class="det-info">
+          <span style="display:inline-flex;align-items:center;gap:4px;background:rgba(168,85,247,.15);color:var(--purple);font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:1px;margin-bottom:9px">🎌 Anime · VidSrc.icu</span>
+          <h1 class="det-title">${esc(title)}</h1>
+          ${eng&&eng!==title?`<div class="det-ori">${esc(eng)}</div>`:''}
+          <div class="det-chips">
+            ${rat?`<span style="color:var(--gold);font-weight:700;font-size:13px">⭐${rat}</span>`:''}
+            ${year?`<span class="det-chip">${year}</span>`:''}
+            ${eps?`<span class="det-chip">${eps} tập</span>`:''}
+            ${anime.status?`<span class="det-chip" style="color:#fb923c">${esc(anime.status)}</span>`:''}
+          </div>
+          <div class="det-genres">${gens}</div>
+          <p class="det-desc">${esc(anime.synopsis||'Chưa có mô tả.')}</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+            <select id="ani-ep" class="sel">${epOpts}</select>
+            <select id="ani-dub" class="sel">
+              <option value="0">Phụ đề (Sub)</option>
+              <option value="1">Lồng tiếng (Dub)</option>
+            </select>
+            <button class="btn btn-red" onclick="watchAniEp()">▶ Xem tập này</button>
+          </div>
+          <div class="det-acts">
+            <button class="btn btn-red" onclick="go('play-ani',{malId:${anime.mal_id}})">▶ Xem tập 1</button>
+            <button class="fav-btn${wl?' on':''}" id="fav-btn" onclick='toggleWL(${JSON.stringify(wlData)})'>${wl?'❤️':'🤍'}</button>
+            <button class="btn btn-ghost" onclick="history.length>1?history.back():go('home')">← Quay lại</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${relH?`<section class="sec"><div class="sec-head"><h2 class="sec-title">Anime liên quan</h2></div><div class="row">${relH}</div></section>`:''}
+    ${renderFooter()}
+  </div>`;
+  setupNavScroll();
+  window.watchAniEp=function(){
+    const e=document.getElementById('ani-ep'), d=document.getElementById('ani-dub');
+    S.epNum=parseInt((e&&e.value)||1); S.dub=parseInt((d&&d.value)||0);
+    go('play-ani',{malId:anime.mal_id});
+  };
+}
+
+// ═══════════════════════════════════════
+//  PLAYER — KKPhim
+// ═══════════════════════════════════════
+async function pgPlayKK(){
+  const app=document.getElementById('app');
+  app.innerHTML=renderNav()+`<div class="player-page page"><div class="loading"><div class="spin spin-lg"></div><p>Đang tải player...</p></div></div>`;
+  setupNavScroll();
+  let data, movie, episodes=[];
+  try{ data=await kkDetail(S.slug); movie=data&&data.movie||data; episodes=data&&data.episodes||[]; }
+  catch(e){ go('home'); return; }
+
+  addHist({uid:'kk_'+(movie._id||movie.slug),name:movie.name,thumb:fixImg(movie.thumb_url||movie.poster_url),year:movie.year,src:'kk',slug:movie.slug||S.slug});
+
+  const title=movie.name||'', year=movie.year||'';
+  const svIdx=Math.min(S.svIdx,Math.max(0,episodes.length-1));
+  const server=episodes[svIdx]||null;
+  const epList=(server&&server.server_data)||[];
+  const epIdx=Math.min(S.epIdx,Math.max(0,epList.length-1));
+  const curEp=epList[epIdx]||null;
+  const embed=curEp&&curEp.link_embed||null;
+  const m3u8=curEp&&curEp.link_m3u8||null;
+  const wl=inWL('kk_'+(movie._id||movie.slug));
+  const wlData=JSON.stringify({uid:'kk_'+(movie._id||movie.slug),name:movie.name,thumb:fixImg(movie.thumb_url||movie.poster_url),year,src:'kk',slug:movie.slug||S.slug});
+
+  const epSW=epList.length>1?`<div style="margin-top:10px"><div style="font-size:12px;font-weight:600;margin-bottom:6px;color:var(--mu)">📋 Chọn tập:</div><div class="ep-sw">${epList.map((e,i)=>`<button class="ep-btn${i===epIdx?' on':''}" onclick="S.epIdx=${i};S.svIdx=${svIdx};go('play-kk',{slug:'${esc(movie.slug||S.slug)}'})">${esc(e.name||'Tập '+(i+1))}</button>`).join('')}</div></div>`:''  ;
+  const svSW=episodes.length>1?`<div style="margin-top:8px"><div style="font-size:12px;font-weight:600;margin-bottom:6px;color:var(--mu)">🔄 Server:</div><div style="display:flex;gap:6px;flex-wrap:wrap">${episodes.map((sv,i)=>`<button class="ep-btn${i===svIdx?' on':''}" onclick="S.svIdx=${i};S.epIdx=0;go('play-kk',{slug:'${esc(movie.slug||S.slug)}'})">${esc(sv.server_name||'Server '+(i+1))}</button>`).join('')}</div></div>`:'' ;
+
+  let playerHTML;
+  if(embed){
+    playerHTML=`<iframe src="${esc(embed)}" allow="autoplay;fullscreen;picture-in-picture" allowfullscreen></iframe>`;
+  } else if(m3u8){
+    playerHTML=`<video id="hls-v" controls autoplay style="position:absolute;inset:0;width:100%;height:100%"></video>`;
+  } else {
+    playerHTML=`<div class="no-video"><div style="font-size:48px;opacity:.4">🎬</div><h3>Chưa có nguồn phim</h3><p style="font-size:12.5px;color:var(--mu)">Thử server hoặc tập khác.</p></div>`;
+  }
+
+  let simH='';
+  try{ const sim=await kkNew(2); simH=(sim&&sim.items||[]).slice(0,8).map(CardKK).join(''); }catch(e){}
+
+  app.innerHTML=renderNav()+`<div class="player-page page">
+    <div class="player-wrap">${playerHTML}</div>
+    <div class="player-info">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div style="flex:1">
+          <div class="player-title">${esc(title)}${curEp&&curEp.name?` <span style="color:var(--green);font-size:17px">— ${esc(curEp.name)}</span>`:''}</div>
+          <div class="player-meta">${year}${server?' · '+esc(server.server_name):''}${embed||m3u8?' · 🟢 Đang phát':' · ⚠️ Không có nguồn'} · <span style="color:var(--green);font-weight:600">🇻🇳 KKPhim</span></div>
+          ${epSW}${svSW}
+        </div>
+        <div style="display:flex;gap:7px;align-items:center;flex-shrink:0">
+          <button class="fav-btn${wl?' on':''}" id="fav-btn" onclick='toggleWL(${JSON.stringify(wlData)})'>${wl?'❤️':'🤍'}</button>
+          <button class="btn btn-ghost" onclick="go('det-kk',{slug:'${esc(movie.slug||S.slug)}'})">ℹ Chi tiết</button>
+        </div>
+      </div>
+    </div>
+    ${simH?`<section class="sec"><h2 class="sec-title" style="margin-bottom:13px">Phim liên quan</h2><div class="row">${simH}</div></section>`:''}
+    ${renderFooter()}
+  </div>`;
+  setupNavScroll();
+
+  if(!embed && m3u8){
+    const sc=document.createElement('script');
+    sc.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.10/hls.min.js';
+    sc.onload=function(){
+      const v=document.getElementById('hls-v'); if(!v) return;
+      if(window.Hls&&Hls.isSupported()){ const h=new Hls(); h.loadSource(m3u8); h.attachMedia(v); }
+      else if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=m3u8; }
+    };
+    document.head.appendChild(sc);
+  }
+}
+
+// ═══════════════════════════════════════
+//  PLAYER — Anime / VidSrc
+// ═══════════════════════════════════════
+async function pgPlayAni(){
+  const app=document.getElementById('app');
+  const id=S.malId, epn=S.epNum||1, dub=S.dub||0;
+  app.innerHTML=renderNav()+`<div class="player-page page"><div class="loading"><div class="spin spin-lg"></div><p>Đang tải anime player...</p></div></div>`;
+  setupNavScroll();
+  try{
+    const d=await jkDetail(id); const anime=d&&d.data||d;
+    const title=anime.title||'', year=anime.year||'';
+    const totalEps=anime.episodes||100;
+    const imgs=anime.images||{};
+    const po=(imgs.jpg&&imgs.jpg.large_image_url)||(imgs.webp&&imgs.webp.image_url)||'';
+    addHist({uid:'ani_'+id,name:title,thumb:po,year,src:'ani',malId:id});
+    const wl=inWL('ani_'+id);
+    const wlData=JSON.stringify({uid:'ani_'+id,name:title,thumb:po,year,src:'ani',malId:id});
+    const eMax=Math.min(totalEps||200,1000);
+    const eOpts=Array.from({length:eMax},(_,i)=>`<option value="${i+1}"${i+1===epn?' selected':''}>Tập ${i+1}</option>`).join('');
+    const dOpts=`<option value="0"${dub===0?' selected':''}>Sub</option><option value="1"${dub===1?' selected':''}>Dub</option>`;
+
+    app.innerHTML=renderNav()+`<div class="player-page page">
+      <div class="player-wrap">
+        <iframe id="ani-fr" src="${esc(vsAnime(id,epn,dub))}" allow="autoplay;fullscreen;picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="player-info">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:10px">
+          <div style="flex:1">
+            <div class="player-title">${esc(title)} <span style="color:var(--purple);font-size:17px">Tập ${epn} · ${dub?'Dub':'Sub'}</span></div>
+            <div class="player-meta">${year} · 🟢 VidSrc.icu · <span style="color:var(--purple);font-weight:600">🎌 Anime</span></div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+              <select id="a-ep" class="sel" onchange="swAniEp()">${eOpts}</select>
+              <select id="a-dub" class="sel" onchange="swAniEp()">${dOpts}</select>
+            </div>
+          </div>
+          <div style="display:flex;gap:7px;align-items:center;flex-shrink:0">
+            <button class="fav-btn${wl?' on':''}" id="fav-btn" onclick='toggleWL(${JSON.stringify(wlData)})'>${wl?'❤️':'🤍'}</button>
+            <button class="btn btn-ghost" onclick="go('det-ani',{malId:${id}})">ℹ Chi tiết</button>
+          </div>
+        </div>
+      </div>
+      ${renderFooter()}
+    </div>`;
+    setupNavScroll();
+    window.swAniEp=function(){
+      const e=document.getElementById('a-ep'), db=document.getElementById('a-dub');
+      const ne=parseInt((e&&e.value)||1), nd=parseInt((db&&db.value)||0);
+      const fr=document.getElementById('ani-fr');
+      if(fr) fr.src=vsAnime(id,ne,nd);
+    };
+  }catch(e){
+    app.innerHTML=renderNav()+`<div class="player-page page"><div class="no-video" style="height:50vh"><div style="font-size:48px;opacity:.4">🎌</div><h3>Không tải được</h3><p style="color:var(--mu);font-size:13px">${esc(e.message)}</p></div>${renderFooter()}</div>`;
+    setupNavScroll();
+  }
+}
+
+// ═══════════════════════════════════════
+//  PLAYER — YouTube (embed trực tiếp)
+// ═══════════════════════════════════════
+function pgPlayYT(){
+  const app=document.getElementById('app');
+  const id=S.ytId||'';
+  if(!id){ go('home'); return; }
+  // YouTube embed - hoạt động 100%, không cần API
+  const embed=`https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+  const thumb=`https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  addHist({uid:'yt_'+id,name:'YouTube: '+id,thumb:thumb,year:'',src:'yt',ytId:id});
+  app.innerHTML=renderNav()+`<div class="player-page page">
+    <div class="player-wrap">
+      <iframe src="${esc(embed)}" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="player-info">
+      <div class="player-title">🔴 YouTube Video</div>
+      <div class="player-meta">Video ID: ${esc(id)} · <span style="color:var(--yt);font-weight:600">YouTube Embed</span></div>
+      <div style="display:flex;gap:9px;margin-top:12px;flex-wrap:wrap">
+        <a href="https://www.youtube.com/watch?v=${esc(id)}" target="_blank" class="btn btn-yt">🔴 Mở trên YouTube</a>
+        <button class="btn btn-ghost" onclick="go('cat',{cat:'yt'})">🔍 Tìm video khác</button>
+      </div>
+    </div>
+    ${renderFooter()}
+  </div>`;
+  setupNavScroll();
+}
+
+// ═══════════════════════════════════════
+//  SEARCH PAGE
+// ═══════════════════════════════════════
+let _srchT;
+async function pgSearch(){
+  const app=document.getElementById('app');
+  const q=S.q, src=S.src||'all';
+  app.innerHTML=renderNav()+`<div class="search-page page">
+    <h1>Tìm kiếm</h1>
+    <div class="big-search-wrap">
+      <span>🔍</span>
+      <input class="big-search" id="srch-q" type="text" placeholder="Tìm phim, anime, YouTube..." value="${esc(q)}" autocomplete="off"
+        oninput="liveSearch(this.value)"
+        onkeydown="if(event.key==='Enter'){clearTimeout(_srchT);runSearch(this.value,1)}"/>
+    </div>
+    <div class="filter-tabs">
+      <button class="f-tab${src==='all'?' on-all':''}" id="f-all" onclick="setSrc('all')">🔍 Tất cả</button>
+      <button class="f-tab${src==='vn'?' on-vn':''}" id="f-vn" onclick="setSrc('vn')">🇻🇳 Phim Việt</button>
+      <button class="f-tab${src==='lt'?' on-lt':''}" id="f-lt" onclick="setSrc('lt')">🔊 Lồng tiếng</button>
+      <button class="f-tab${src==='ani'?' on-ani':''}" id="f-ani" onclick="setSrc('ani')">🎌 Anime</button>
+      <button class="f-tab${src==='yt'?' on-yt':''}" id="f-yt" onclick="setSrc('yt')">🔴 YouTube</button>
+    </div>
+    <div id="s-count" class="result-count">${q?'Đang tìm...':''}</div>
+    <div id="s-grid" class="${src==='yt'?'yt-grid':'grid'}">${q?skGrid(12):''}</div>
+    <div id="s-more" style="text-align:center;margin-top:18px"></div>
+  </div>`;
+  setupNavScroll();
+  const inp=document.getElementById('srch-q'); if(inp) inp.focus();
+  if(q) await runSearch(q,1);
+}
+window.setSrc=function(s){ S.src=s; go('search',{q:S.q,src:s}); };
+window.liveSearch=function(q){ S.q=q; clearTimeout(_srchT); const g=document.getElementById('s-grid'); if(!q.trim()){if(g)g.innerHTML='';return;} _srchT=setTimeout(()=>runSearch(q,1),480); };
+
+window.runSearch=async function(q,p){
+  p=p||1; S.q=q;
+  const grid=document.getElementById('s-grid'), count=document.getElementById('s-count'), more=document.getElementById('s-more');
+  if(!grid) return;
+  const src=S.src||'all';
+  if(p===1){ grid.className=src==='yt'?'yt-grid':'grid'; grid.innerHTML=src==='yt'?skGrid(12):skGrid(12); }
+  if(count) count.textContent='Đang tìm...';
+  try{
+    if(src==='yt'){
+      grid.className='yt-grid';
+      const vids=await ytSearch(q,p);
+      if(p===1){ grid.innerHTML=vids.map(CardYT).join('')||`<div style="text-align:center;padding:48px;color:var(--mu)">Không tìm thấy.</div>`; }
+      else{ grid.insertAdjacentHTML('beforeend',vids.map(CardYT).join('')); }
+      if(count) count.textContent=vids.length?`${vids.length} video YouTube cho "${q}"`:' ';
+      if(more) more.innerHTML=vids.length>=5?`<button class="btn btn-ghost" onclick="runSearch('${esc(q)}',${p+1})">Tải thêm ↓</button>`:'';
+      return;
+    }
+    grid.className='grid';
+    const doVN=src==='all'||src==='vn';
+    const doLT=src==='lt';
+    const doAni=src==='all'||src==='ani';
+    const doYT=src==='all';
+
+    const [kkR,kkLR,jkR,ytR]=await Promise.all([
+      doVN?kkSearch(q,p).catch(()=>null):null,
+      doLT?kkSearch(q+' lồng tiếng',1).catch(()=>null):null,
+      doAni?jkSearch(q,p).catch(()=>null):null,
+      doYT?ytSearch(q,1).catch(()=>[]):null,
+    ]);
+
+    const kkItems2=kkR?kkI(kkR):[];
+    const kkLItems=kkLR?kkI(kkLR).filter(m=>!kkItems2.some(x=>x.slug===m.slug)):[];
+    const jkItems2=jkR?(jkR.data||[]):[];
+    const ytItems=(ytR||[]).slice(0,4);
+
+    let cards=[];
+    const ml=Math.max(kkItems2.length,kkLItems.length,jkItems2.length);
+    for(let i=0;i<ml;i++){
+      if(i<kkItems2.length) cards.push(CardKK(kkItems2[i]));
+      if(i<kkLItems.length) cards.push(CardKK(kkLItems[i]));
+      if(i<jkItems2.length) cards.push(CardAnime(jkItems2[i]));
+    }
+    // YT dạng card đứng
+    ytItems.forEach(v=>{
+      const vid=v.videoId||''; const t=esc(v.title||''); const thumb=ytThumb(v);
+      cards.push(`<div class="card" onclick="go('play-yt',{ytId:'${vid}'})">
+        <div class="c-poster"><img src="${esc(thumb)}" alt="${t}" loading="lazy" onerror="this.src='${PH()}'">
+        <span class="c-badge cb-yt">🔴 YT</span>
+        <div class="c-ov"><div class="c-play">▶</div></div></div>
+        <div class="c-info"><div class="c-title">${t}</div><div class="c-sub">${esc(v.author||'')}</div></div>
+      </div>`);
+    });
+
+    const total=kkItems2.length+kkLItems.length+jkItems2.length+ytItems.length;
+    if(p===1){ grid.innerHTML=cards.join('')||`<div style="text-align:center;padding:48px;color:var(--mu)">Không tìm thấy "<strong>${esc(q)}</strong>"</div>`; }
+    else{ grid.insertAdjacentHTML('beforeend',cards.join('')); }
+    if(count) count.textContent=total?`${total} kết quả cho "${q}"`:' ';
+    if(more) more.innerHTML=total>=20?`<button class="btn btn-ghost" onclick="runSearch('${esc(q)}',${p+1})">Tải thêm ↓</button>`:'';
+  }catch(e){
+    if(grid) grid.innerHTML=`<div style="text-align:center;padding:48px;color:var(--mu)">Lỗi: ${esc(e.message)}</div>`;
+  }
+};
+
+// ═══════════════════════════════════════
+//  WATCHLIST PAGE
+// ═══════════════════════════════════════
+function pgWatchlist(){
+  const app=document.getElementById('app');
+  function srcTag(m){
+    if(m.src==='ani') return '<span class="tag ani">🎌</span>';
+    if(m.src==='yt')  return '<span class="tag yt">🔴</span>';
+    return '<span class="tag vn">🇻🇳</span>';
+  }
+  function wCard(m){
+    const t=esc(m.name||'?'), po=m.thumb||PH(), y=m.year||'';
+    let oc,pc;
+    if(m.src==='ani'){oc=`go('det-ani',{malId:${m.malId}})`;pc=`go('play-ani',{malId:${m.malId}})`;}
+    else if(m.src==='yt'){oc=`go('play-yt',{ytId:'${esc(m.ytId||m.uid.replace('yt_',''))}'})`; pc=oc;}
+    else{oc=`go('det-kk',{slug:'${esc(m.slug)}'})`;pc=`go('play-kk',{slug:'${esc(m.slug)}'})` ;}
+    return `<div class="card" onclick="${oc}">
+      <div class="c-poster"><img src="${po}" loading="lazy" onerror="this.src='${PH()}'">
+      <div class="c-ov"><div class="c-play" onclick="event.stopPropagation();${pc}">▶</div></div></div>
+      <div class="c-info"><div class="c-title">${t}</div><div class="c-sub">${y} ${srcTag(m)}</div></div>
+    </div>`;
+  }
+  app.innerHTML=renderNav()+`<div class="wl-page page">
+    <h1>Thư viện của tôi</h1>
+    <p style="font-size:13px;color:var(--mu)">Phim yêu thích & lịch sử — 🇻🇳 Phim Việt · 🎌 Anime · 🔴 YouTube</p>
+    <div class="wl-tabs">
+      <button class="wl-tab on" id="wt1" onclick="swWL('wl')">❤️ Yêu thích (${S.wl.length})</button>
+      <button class="wl-tab" id="wt2" onclick="swWL('hi')">🕑 Lịch sử (${S.hist.length})</button>
+    </div>
+    <div id="wtc1">${S.wl.length?`<div class="grid">${S.wl.map(wCard).join('')}</div>`:`<div class="empty-state"><div class="ico">🎬</div><h3>Chưa có yêu thích</h3><p>Bấm ❤️ để lưu phim.</p><button class="btn btn-red" onclick="go('home')" style="margin-top:13px">Khám phá</button></div>`}</div>
+    <div id="wtc2" style="display:none">${S.hist.length?`<div class="grid">${S.hist.map(wCard).join('')}</div>`:`<div class="empty-state"><div class="ico">🕑</div><h3>Chưa có lịch sử</h3><p>Xem phim để xuất hiện ở đây.</p></div>`}</div>
+  </div>`;
+  window.swWL=t=>{
+    document.getElementById('wtc1').style.display=t==='wl'?'':'none';
+    document.getElementById('wtc2').style.display=t==='hi'?'':'none';
+    document.getElementById('wt1').className='wl-tab'+(t==='wl'?' on':'');
+    document.getElementById('wt2').className='wl-tab'+(t==='hi'?' on':'');
+  };
+  setupNavScroll();
+}
+
+// ═══════════════════════════════════════
+//  NAV SEARCH DROPDOWN
+// ═══════════════════════════════════════
+let _navT;
+window.navInput = async function(q){
+  const drop=document.getElementById('drop'); if(!drop) return;
+  if(!q.trim()){ drop.className=''; drop.innerHTML=''; return; }
+  clearTimeout(_navT);
+  drop.className='show';
+  drop.innerHTML='<div style="padding:12px;text-align:center"><span class="spin"></span></div>';
+  _navT=setTimeout(async function(){
+    try{
+      const [kkR,jkR,ytR]=await Promise.all([
+        kkSearch(q,1).catch(()=>null),
+        jkSearch(q,1).catch(()=>null),
+        ytSearch(q,1).catch(()=>[]),
+      ]);
+      const ki=(kkR?kkI(kkR):[]).slice(0,4);
+      const ji=(jkR?(jkR.data||[]):[]).slice(0,3);
+      const yi=(ytR||[]).slice(0,3);
+      if(!ki.length&&!ji.length&&!yi.length){ drop.className=''; drop.innerHTML=''; return; }
+      let html='';
+      if(ki.length){
+        html+='<div class="drop-sep">🇻🇳 Phim Việt (KKPhim)</div>';
+        html+=ki.map(m=>`<div class="drop-item" onclick="go('det-kk',{slug:'${m.slug}'});closeNav()">
+          <img src="${fixImg(m.thumb_url||m.poster_url)||PH(32,48)}" onerror="this.src='${PH(32,48)}'">
+          <div><div class="di-title">${esc(m.name||m.title||'')}</div>
+          <div class="di-sub"><span class="tag vn">KKPhim</span>${esc(m.year||'')}</div></div>
+        </div>`).join('');
+      }
+      if(ji.length){
+        html+='<div class="drop-sep">🎌 Anime (Jikan/MAL)</div>';
+        html+=ji.map(m=>{ const imgs=m.images||{}; const po2=(imgs.jpg&&imgs.jpg.image_url)||(imgs.webp&&imgs.webp.image_url)||PH(32,48);
+          return `<div class="drop-item" onclick="go('det-ani',{malId:${m.mal_id}});closeNav()">
+            <img src="${po2}" onerror="this.src='${PH(32,48)}'">
+            <div><div class="di-title">${esc(m.title||'')}</div>
+            <div class="di-sub"><span class="tag ani">Anime</span>${esc(m.year||'')}</div></div>
+          </div>`;}).join('');
+      }
+      if(yi.length){
+        html+='<div class="drop-sep">🔴 YouTube</div>';
+        html+=yi.map(v=>`<div class="drop-item yt-row" onclick="go('play-yt',{ytId:'${esc(v.videoId||'')}'}); closeNav()">
+          <img src="${esc(ytThumb(v))}" onerror="this.src='${PH(54,34)}'">
+          <div><div class="di-title">${esc(v.title||'')}</div>
+          <div class="di-sub"><span class="tag yt">YouTube</span>${esc(v.author||'')}</div></div>
+        </div>`).join('');
+      }
+      html+=`<div class="drop-more" onclick="go('search',{q:'${esc(q)}'});closeNav()">Xem tất cả kết quả cho "${esc(q)}" →</div>`;
+      drop.innerHTML=html; drop.className='show';
+    }catch(e){ drop.className=''; drop.innerHTML=''; }
+  },360);
+};
+window.closeNav=()=>{ const d=document.getElementById('drop'); if(d){d.className='';d.innerHTML='';} };
+document.addEventListener('click',e=>{ const sw=document.getElementById('sw'); if(sw&&!sw.contains(e.target)) closeNav(); });
+
+// ═══════════════════════════════════════
+//  ROUTER
+// ═══════════════════════════════════════
+function render(){
+  clearInterval(window._ht);
+  switch(S.page){
+    case 'home':      pgHome();      break;
+    case 'lt':        pgLT();        break;
+    case 'cat':       pgCat();       break;
+    case 'det-kk':    pgDetKK();     break;
+    case 'det-ani':   pgDetAni();    break;
+    case 'play-kk':   pgPlayKK();    break;
+    case 'play-ani':  pgPlayAni();   break;
+    case 'play-yt':   pgPlayYT();    break;
+    case 'search':    pgSearch();    break;
+    case 'watchlist': pgWatchlist(); break;
+    default:          pgHome();
+  }
+}
+window.render = render;
+render();
+</script>
+</body>
+</html>
