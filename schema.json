@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "KHANHNAM.MOVIE",
+  "url": "https://khanhnam.movie",
+  "description": "Nền tảng xem phim Việt, Anime, YouTube miễn phí",
+  "inLanguage": "vi",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://khanhnam.movie/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
